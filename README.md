@@ -60,6 +60,7 @@ When doing the comparison between Fig 1 a) and 2.1 b), it is quite hard to disti
 <p float="left">
   <img src="https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/7ae5cd1172e979b84b1c29af26835156df0d259a/Cloud%20Physics%20Project/Height.png" width="400" alt="Caption 1" />
 </p>
+
 **Figure 2.1:** Q_c against Height Comparison between Nc=100 cm-3 and 75 cm-3 for Thompson (2008) microphysics scheme.
  From Fig 2.1, we see that the dotted lines (Maritime case N_c = 75 cm-3) is less than the full lines. This shows that the LWC did decrease compared to the original case.
 
@@ -69,6 +70,7 @@ and the Thompson Aersol-Aware scheme which is given below:
 <p float="left">
   <img src="https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/7ae5cd1172e979b84b1c29af26835156df0d259a/Cloud%20Physics%20Project/Thompson_Height.png" width="400" alt="Caption 1" />
 </p>
+
 **Figure 2.2:** Qc against Height Comparison between Thompson (2008) microphysics and Thompson (2014) aerosol-aware.
 
 From Fig 2.2, we can see that for the Thompson Aerosol-Aware, there is a significant decrease in LWC which is in agreement with Fig 1.
@@ -105,4 +107,4 @@ of the fog layer (longwave radiation) and its dissipation (shortwave radiation).
 
 ## Futher Info At:
 
-[Project Report](Cloud Physics Project/Project_Report_ESS_5205.pdf)
+[Project Report](https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/6f5b4dd62c448ee0ea183f4e7e1d61e335082a30/Cloud%20Physics%20Project/Project_Report_ESS_5205.pdf)
