@@ -40,9 +40,9 @@ We decided to compare the first figure in the 'Surface Deposition' Paper. We plo
 temperature to 282 K.
 
 <p float="left">
-  <img src="https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/8d22fe85c1f97012fae46215f6f088aa37286f16/Cloud%20Physics%20Project/Nt_100.png" width="300" alt="N_c= 100 cm−3" />
-  <img src="https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/8d22fe85c1f97012fae46215f6f088aa37286f16/Cloud%20Physics%20Project/Nt_75.png" width="300" alt="N_c= 75 cm−3" /> 
-  <img src="https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/8d22fe85c1f97012fae46215f6f088aa37286f16/Cloud%20Physics%20Project/Nt_100_28.png" width="300" alt="Varying N_c" />
+  <img src="https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/8d22fe85c1f97012fae46215f6f088aa37286f16/Cloud%20Physics%20Project/Nt_100.png" width="255" alt="N_c= 100 cm−3" />
+  <img src="https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/8d22fe85c1f97012fae46215f6f088aa37286f16/Cloud%20Physics%20Project/Nt_75.png" width="255" alt="N_c= 75 cm−3" /> 
+  <img src="https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/8d22fe85c1f97012fae46215f6f088aa37286f16/Cloud%20Physics%20Project/Nt_100_28.png" width="255" alt="Varying N_c" />
 </p>
 
 **Figure 1:** Plotting Q_c against Height for 4 days with a 6 hr surface cooling at the start of the simulation. Fig 1 a) The Thompson scheme with Nc= 100 cm−3, b) The Thompson scheme with N_c= 75 cm−3 and c) The Thompson Aerosol-Aware scheme which has N_c as a predicted variable.
