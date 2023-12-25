@@ -47,3 +47,62 @@ temperature to 282 K.
 
 **Figure 1:** Plotting Q_c against Height for 4 days with a 6 hr surface cooling at the start of the simulation. Fig 1 a) The Thompson scheme with Nc= 100 cm−3, b) The Thompson scheme with N_c= 75 cm−3 and c) The Thompson Aerosol-Aware scheme which has N_c as a predicted variable.
 
+We observe that there are no upper layer clouds and the cloud/fog layer
+develops after the 6-hour cooling. The fog layer seems pretty stratified and steadily increases
+with time to reach a height of about 315 m for all of the three cases. This may be due to
+no radiation schemes being introduced but this also simplifies accessing the performance
+of our changes. We can see there is a slight decrease in LWC when we change the cloud
+droplet concentration to 75 cm−3 and there is a significant decrease in LWC when we use
+the Thompson Aerosol-Aware.
+
+When doing the comparison between Fig 1 a) and 2.1 b), it is quite hard to distinguish the decrease in LWC content, so we decided to plot each day (16th, 17th, 18th, 19th) instead of continuously. For example, we plotted the cloud mixing on the 16th at 00:00 UTC against height for the original case and then for the maritime case. The figure is given below:
+
+<p float="left">
+  <img src="https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/7ae5cd1172e979b84b1c29af26835156df0d259a/Cloud%20Physics%20Project/Height.png" width="400" alt="Caption 1" />
+</p>
+**Figure 2.1:** Q_c against Height Comparison between Nc=100 cm-3 and 75 cm-3 for Thompson (2008) microphysics scheme.
+ From Fig 2.1, we see that the dotted lines (Maritime case N_c = 75 cm-3) is less than the full lines. This shows that the LWC did decrease compared to the original case.
+
+We also plotted a comparison between the default Thompson case
+and the Thompson Aersol-Aware scheme which is given below:
+
+<p float="left">
+  <img src="https://github.com/Piyush-T31/WRF_Projects_CloudPhysics/blob/7ae5cd1172e979b84b1c29af26835156df0d259a/Cloud%20Physics%20Project/Thompson_Height.png" width="400" alt="Caption 1" />
+</p>
+**Figure 2.2:** Qc against Height Comparison between Thompson (2008) microphysics and Thompson (2014) aerosol-aware.
+
+From Fig 2.2, we can see that for the Thompson Aerosol-Aware, there is a significant decrease in LWC which is in agreement with Fig 1.
+
+### Discussion 
+
+We decided to calculate the visibility inside the fog layer and do a comparison between the
+three cases. 
+
+| Visibility/m | After 24hrs | After 48hrs | After 72hrs | After 96hrs |
+|--------------|-------------|-------------|-------------|-------------|
+| Nc=100       | 37.44445    | 46.22861    | 56.55745    | 65.40787    |
+| Nc=75        | 39.85451    | 48.97966    | 58.00246    | 69.36349    |
+| Aerosol-Aware| 224.83444   | 235.82130   | 401.35534   | 491.91817   |
+
+**Figure 3:** Table containing visibility at 00:00 UTC for each day of the simulation at height z= 1.6m for each case (original, when Nc is changed to 75 cm−3 and Thompson aerosol-aware).
+
+
+### Conclusion 
+
+By changing the cloud droplet number concentration to be more suitable for a maritime case in the Thompson microphysics scheme, that is changing the N c from 100 cm−3
+to 75 cm−3, we were able to decrease the cloud mixing ratio or LWC by 7 %. This increased visibility by approximately 3 m. When we changed the Thompson microphysics scheme to its newer
+version, the Thompson Aerosol-Aware microphysics scheme, which has N c varying with time, we saw the LWC decrease by 55 %. The resulting increase in visibility was around 300 m.
+
+
+### Future Work 
+To be able to validate the comparison, we need to run the real case in WRF and see which one
+is closer to actual observations. This aligns well with the Fog and Turbulence Interactions in
+the Marine Atmosphere (FATIMA) project which collects data around places that have a lot
+of fog occurrence (Sable Island or Yellow Sea). We need to also investigate the Thompson
+Aerosol-Aware scheme to fully understand why it differs that much from the older scheme.
+Finally, we need to implement the radiation scheme as it plays a major role in the growth
+of the fog layer (longwave radiation) and its dissipation (shortwave radiation).
+
+## Futher Info At:
+
+[Project Report](Cloud Physics Project/Project_Report_ESS_5205.pdf)
