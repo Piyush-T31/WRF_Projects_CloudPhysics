@@ -107,4 +107,4 @@ of the fog layer (longwave radiation) and its dissipation (shortwave radiation).
 
 ## Futher Info At:
 
-[Project Report](https://piyush-teeloku.gitbook.io/microphysics/https://piyush-teeloku.gitbook.io/microphysics/)
+[Project Report](https://piyush-teeloku.gitbook.io/microphysics/)
